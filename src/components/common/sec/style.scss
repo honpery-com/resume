@@ -1,0 +1,48 @@
+.sec {
+    &>header {
+        display: flex;
+        justify-content: center;
+        h5 {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 1rem 0;
+            &>* {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .cn {
+                font-size: 1rem;
+                position: relative;
+                height: 1.5rem;
+                &:after {
+                    content: '';
+                    height: 1px;
+                    background: #eee;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: -0.1rem;
+                }
+            }
+            .en {
+                font-size: 0.6rem;
+                color: #969494;
+                height: 1.2rem;
+                position: relative;
+                &:before {
+                    content: '·';
+                    position: absolute;
+                    width: 1rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 1.2rem;
+                    height: 0.6rem;
+                    top: -0.3rem;
+                }
+            }
+        }
+    }
+}
