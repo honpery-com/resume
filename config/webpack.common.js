@@ -20,7 +20,7 @@ exports.config = {
 
 	output: {
 		path: root('build'),
-		filename: `[name].${env === 'prod' ? 'min.' : ''}.js`,
+		filename: `[name].${env === 'prod' ? 'min.' : ''}js`,
 	},
 
 	resolve: {
@@ -46,6 +46,11 @@ exports.config = {
 					fallback: "style-loader",
 					use: "css-loader!sass-loader",
 				}),
+			},
+
+			{
+				test: /\.(jpe?g|png|gif|svg)$/i,
+				use: 'file-loader?name=images/[name].[ext]'
 			}
 		]
 	},

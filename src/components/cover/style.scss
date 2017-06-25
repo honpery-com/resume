@@ -1,4 +1,15 @@
 .cover {
-    background: rgba(0, 0, 0, 0.2);
-    height: 200%;
+    background-size: cover;
+    background-position-x: center;
+    height: 100%;
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(53, 53, 53, 0.43);
+    }
 }
