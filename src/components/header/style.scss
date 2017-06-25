@@ -1,0 +1,11 @@
+#header {
+    position: fixed;
+    left: 15px;
+    right: 15px;
+    top: 0;
+    height: 3rem;
+    & {
+        background: white;
+        &.top {}
+    }
+}
